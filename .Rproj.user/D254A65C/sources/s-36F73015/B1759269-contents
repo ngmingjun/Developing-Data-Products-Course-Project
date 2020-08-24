@@ -1,0 +1,36 @@
+---
+title: "Developing Data Products Course Project"
+author: "Ming Jun"
+date: "8/24/2020"
+output: ioslides_presentation
+---
+
+## Introduction
+This presentation is part of the Coursera Developing Data Products Course Project submission. This R Presentation was created using the Rstudio Presenter and published on Rpubs.  
+
+The Shiny Application pitched in this presentation can be found [here](https://ngmingjun.shinyapps.io/ShinyApp/).  
+
+The source code for the Shiny Application can be found [here](https://github.com/ngmingjun/Developing-Data-Products-Course-Project).
+
+## Objective of the Shiny Application
+The Shiny Application was created to allow users to select car data based on the number of cylinders and visualize different linear models by selecting different data points from the mtcars dataset.
+
+## Output
+```{r echo = FALSE, message = FALSE, fig.height = 3, fig.width = 5, fig.align = 'center'}
+plot(x = mtcars$hp, y = mtcars$mpg, xlab = "Horsepower", ylab = "MPG", 
+     main = "Horsepower against MPG", col = mtcars$cyl, pch = 16, 
+     xlim = c(50, 350), ylim = c(10, 35))
+legend("topright", legend = c("4 Cylinder", "6 Cylinder", "8 Cylinder"), 
+       col = c("blue", "purple", "grey"), pch = 16)
+abline(lm(mpg ~ hp, data = mtcars), col = "red", lwd = 2)
+```
+The output from the Shiny Application will display an interactive graph similar to the graph above. Users will be able to select the data points on the graph based on the number of cylinders. Users will also be able to highlight the data points on the interactive graph to visualize different models, the red colour line will be fitted based on the highlighted data points and the slope and intercept of the model will be shown below.
+
+## Thank you for your time
+Once again the links are provided below:  
+
+Shiny Application: https://ngmingjun.shinyapps.io/ShinyApp/  
+
+Source Code: https://github.com/ngmingjun/Developing-Data-Products-Course-Project  
+
+All the best to my fellow students!

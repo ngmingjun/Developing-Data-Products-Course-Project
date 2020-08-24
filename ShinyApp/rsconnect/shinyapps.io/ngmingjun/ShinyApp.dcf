@@ -1,0 +1,12 @@
+name: ShinyApp
+title: ShinyApp
+username:
+account: ngmingjun
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2700386
+bundleId: 3550779
+url: https://ngmingjun.shinyapps.io/ShinyApp/
+when: 1598264194.49014
+asMultiple: FALSE
+asStatic: FALSE
